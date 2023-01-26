@@ -12,7 +12,7 @@ namespace TavoloWebAppBLL.Models
         public int Id { get; set; }
         public string ImageUrl { get; set; }
 
-        [ForeignKey("Images")]
+        [ForeignKey("Project")]
         public int Project_Id { get; set; }
 
         public Project Project { get; set; }

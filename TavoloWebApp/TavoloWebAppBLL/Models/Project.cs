@@ -1,4 +1,5 @@
-﻿using System.ComponentModel;
+﻿using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
 namespace TavoloWebAppBLL.Models
@@ -18,7 +19,7 @@ namespace TavoloWebAppBLL.Models
         public string TimeOfWork { get; set; }
 
         public DateTime CreatedDateTime { get; set; } = DateTime.Today;
-
+        [ValidateNever]
         public List<Image> Images { get; set; }
     }
 }
