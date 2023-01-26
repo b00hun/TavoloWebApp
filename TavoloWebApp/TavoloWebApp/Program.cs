@@ -3,6 +3,7 @@ using TavoloWebAppBLL.Data;
 using TavoloWebAppBLL.Repositories;
 using TavoloWebAppBLL.Repositories.IRepositories;
 using TavoloWebAppBLL.Services;
+using TavoloWebAppBLL.Services.IServices;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,6 +14,8 @@ builder.Services.AddDbContext<ApplicationDbContext>(
         builder.Configuration.GetConnectionString("DefaultConnection")));
 builder.Services.AddScoped<IProjectRepository, ProjectRepository>();
 builder.Services.AddScoped<IProjectService,ProjectService>();
+builder.Services.AddScoped<IImageRepository, ImageRepository>();
+builder.Services.AddScoped<IImageService, ImageService>();
 
 var app = builder.Build();
 
