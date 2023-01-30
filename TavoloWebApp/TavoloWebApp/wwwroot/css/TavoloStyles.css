@@ -1,0 +1,8 @@
+﻿.navigation-bg {
+    background-color: transparent
+}
+
+.navigation-bg.scrolled {
+    background-color: antiquewhite !important;
+    transition: background-color 200ms linear;
+}
