@@ -2,7 +2,35 @@
     background-color: transparent
 }
 
-.navigation-bg.scrolled {
-    background-color: antiquewhite !important;
-    transition: background-color 200ms linear;
+    .navigation-bg.scrolled {
+        background-color: #cccccc !important;
+        transition: background-color 200ms linear;
+    }
+
+.logo{
+    height :50px
 }
+.logo.scrolled {
+    height: 50px;
+    filter:invert(1);
+    transition: filter 200ms linear;
+}
+
+.nav-font {
+    font-family: "allura", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size:25px;
+    color:aliceblue;
+    
+
+}
+
+    .nav-font.scrolled {
+        font-family: "allura", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 25px;
+        color:black ;
+        transition: filter 200ms linear;
+    }

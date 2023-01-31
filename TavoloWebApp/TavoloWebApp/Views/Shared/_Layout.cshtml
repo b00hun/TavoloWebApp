@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/TavoloStyles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://use.typekit.net/uoc1jau.css" asp-append-version="true">
     
     
     
@@ -14,23 +15,28 @@
 </head>
 <body class="bg-black">
     <header>
-        <nav class="navbar fixed-top navbar-expand-sm navbar-content navbar-toggleable-sm border-bottom box-shadow mb-3 navigation-bg">
+        <nav class="navbar fixed-top navbar-expand-sm navbar-content navbar-toggleable-sm border-bottom box-shadow mb-3 navigation-bg ">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Tavolo - Stolarnia</a>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                    <div id="scrollLogo">
+                        <img src="~/Assets/LogoSmall.png" class="logo"/>
+                        
+                    </div>
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between ">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link nav-font" asp-area="" asp-controller="Project" asp-action="Index">Projekty</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            <a class="nav-link nav-font" asp-area="" asp-controller="Home" asp-action="Privacy">Kontakt</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Project" asp-action="Index">Projekty</a>
+                            <a class="nav-link nav-font" asp-area="" asp-controller="Project" asp-action="Index">O Firmie</a>
                         </li>
                     </ul>
                 </div>
@@ -54,9 +60,18 @@
     <script src="~/js/site.js" asp-append-version="true"></script>
     <script>
         $(function () {
-            $(document).scroll(function () {
+            $(document).scroll(function () 
+            {
+                
                 var $nav = $(".navigation-bg");
+                var $logo = $(".logo")
+                var $font = $(".nav-font")
                 $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+                $logo.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+                $font.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+                
+                    
+
             });
         });</script>
     @await RenderSectionAsync("Scripts", required: false)
