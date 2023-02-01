@@ -21,16 +21,33 @@
     font-weight: 400;
     font-style: normal;
     font-size:25px;
-    color:aliceblue;
+    color:white;
     
 
 }
 
-    .nav-font.scrolled {
+.nav-font.scrolled {
         font-family: "allura", sans-serif;
         font-weight: 400;
         font-style: normal;
         font-size: 25px;
         color:black ;
         transition: filter 200ms linear;
-    }
+}
+
+.icons{
+    margin-right:10px;
+    margin-top:5px;
+    margin-bottom:5px;
+    
+
+}
+
+.footFont {
+    font-family: "allura", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    color: white;
+}
+
