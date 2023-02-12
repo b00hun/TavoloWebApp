@@ -60,6 +60,72 @@
     color: black;
 }
 
+.about {
+    display: flex;
+    justify-content: center;
+    align-content: center
+}
 
+.mainFont{
+    text-align:justify;
+    
+    margin-left:10%;
+    margin-right:10%;
+    font-size:20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top:2px;
+    padding-bottom:2px;
+}
+
+.mainDiv {
+    
+    border: 2px solid #cccccc;
+    border-radius: 40px 0px 40px 0px;
+    margin-top:10px;
+    margin-bottom:10px;
+    margin-left:15%;
+    margin-right:15%;
+
+}
+
+.banner {
+    width: 100%;
+    height: 500px;
+    padding: 60px;
+    text-align: center;
+    background-image: url("../Assets/main-background3.webp");
+    color: white;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.bannerFont {
+    font-size: 1.1em;
+    font-weight: 100;
+    letter-spacing: 5px;
+}
+
+.bannerHeader {
+    font-size: 2.8em;
+    padding: 10px 0;
+    font-weight: 800;
+}
+
+.btn-banner {
+    font-size: 20px;
+    display: inline-block;
+    border: 1px solid white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 300;
+    margin-top: 30px;
+}
+
+ .btn-banner:hover {
+     background-color: white;
+     color: #33cccc;
+ }
+ 
 
 
