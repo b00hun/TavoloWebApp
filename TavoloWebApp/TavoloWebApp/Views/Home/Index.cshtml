@@ -2,7 +2,7 @@
     ViewData["Title"] = "Stolarstwo Łukasz Chełpa";
 }
 <div styles="margin-left:0px; ">
-    <figure style="background-image: url('@Url.Content("~/Assets/main-background3.webp")');align-items:center; justify-content:right; height:500px; background-size:cover; background-position:center; display:flex; margin-bottom:0px;">
+    <figure style="background-image: url('@Url.Content("~/Assets/backgroundaaa.jpg")');align-items:center; justify-content:right; height:500px; background-size:cover; background-position:center; display:flex; margin-bottom:0px;">
         <figcaption style="position:relative; z-index:1; text-align:center;background-color:transparent;">
             <img src="~/Assets/logostamp2.png" style="filter:invert(1); height:300px; width:auto;  margin-top:15%; margin-right:100px; display:inline-block"  />
         </figcaption>
@@ -30,7 +30,7 @@
     @*Projekty*@
     <section class="banner" style="margin-top:5px">
         <div class="mainDiv bannerProjects">
-            <section class="banner">
+            <section class="banner" style="margin-top:25px">
                 <h1 class="bannerHeader">Projekty</h1>
                 <p class="bannerFont">Zobacz moje realizacje oraz projekty</p>
                 <a class="btn-banner">Projekty</a>
@@ -38,13 +38,17 @@
         </div>
     </section>
     @*Kontakt*@
-    <<section class="banner">
-            <h1 class="bannerHeader">Kontakt</h1>
-            <p class="bannerFont">Jeżeli chciałbyś zamówić któryś z moich projektów, poprosic o wycene- możesz to zrobić bezpośrednio w danym projekcie</p>
-            <p class="bannerFont">Jeśli masz własny pomysł do realizacji - wyślij go do mnie przez formularz kontaktowy w zakładce kontakty</p>
-        <a class="btn-banner">Kontakt</a>
+    <section class="banner" style="margin-top:5px">
+        <div class="mainDiv bannerContact">
+            <section class="banner" style="margin-top:25px">
+                <h1 class="bannerHeader">Kontakt</h1>
+                <p class="bannerFont">Jeżeli chciałbyś zamówić któryś z moich projektów, poprosic o wycene- możesz to zrobić bezpośrednio w danym projekcie</p>
+                <p class="bannerFont">Jeśli masz własny pomysł do realizacji - wyślij go do mnie przez formularz kontaktowy w zakładce kontakty</p>
+                <a class="btn-banner">Kontakt</a>
+            </section>
+        </div>
     </section>
-        
+
     
 
 </div>

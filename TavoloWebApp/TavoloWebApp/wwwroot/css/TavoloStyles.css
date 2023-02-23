@@ -66,15 +66,17 @@
     align-content: center
 }
 
-.mainFont{
-    text-align:justify;
-    
-    margin-left:10%;
-    margin-right:10%;
-    font-size:20px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding-top:2px;
-    padding-bottom:2px;
+.mainFont {
+    text-align: justify;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    color: #cccccc;
+    justify-content: center;
+    text-shadow: 4px 4px 4px black;
 }
 
 .mainDiv {
@@ -97,12 +99,18 @@
     font-size: 1.1em;
     font-weight: 100;
     letter-spacing: 5px;
+    
+    
 }
 
 .bannerHeader {
-    font-size: 2.8em;
-    padding: 10px 0;
-    font-weight: 800;
+    font-family: "allura", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #cccccc;
+    font-size: 3.2em;
+    padding: 30px 0;
+    text-shadow:3px 3px 3px black;
 }
 
 .btn-banner {
@@ -114,6 +122,7 @@
     cursor: pointer;
     font-weight: 300;
     margin-top: 30px;
+    
 }
 
  .btn-banner:hover {
@@ -126,13 +135,20 @@
 }
 
 .bannerAbout {
-    background-image: url("../Assets/main-background3.webp");
+    background-image: url("../Assets/projektybackground.jpg");
+    background-size:cover;
 }
 
-.bannerProjects{
+.bannerProjects {
     background-image: url("../Assets/bannerprojekty.jpg");
-    height:500px;
-    
+    height: 500px;
+    background-size: cover;
+}
+
+.bannerContact {
+    background-image: url("../Assets/kontakt2.jpeg");
+    height: 500px;
+    background-size: cover;
 }
  
 
