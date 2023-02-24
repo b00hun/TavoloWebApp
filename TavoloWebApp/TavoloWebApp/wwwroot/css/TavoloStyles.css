@@ -60,6 +60,17 @@
     color: black;
 }
 
+.headblock {
+    background-image: url("../Assets/backgroundaaa.jpg");
+    align-items: center;
+    justify-content: right;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    margin-bottom: 0px;
+}
+
 .about {
     display: flex;
     justify-content: center;
@@ -70,7 +81,7 @@
     text-align: justify;
     margin-left: 10%;
     margin-right: 10%;
-    font-size: 20px;
+    font-size: 30px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding-top: 2px;
     padding-bottom: 2px;
@@ -108,7 +119,7 @@
     font-weight: 600;
     font-style: normal;
     color: #cccccc;
-    font-size: 3.2em;
+    font-size: 4em;
     padding: 30px 0;
     text-shadow:3px 3px 3px black;
 }
@@ -131,23 +142,32 @@
  }
 
 .bannersection {
-    padding: 2%;
+    padding: 7%;
+    transition: background-color 0.6s ease-out;
 }
+    .bannersection:hover {
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0, 0.6);
+        
+    }
+
 
 .bannerAbout {
     background-image: url("../Assets/projektybackground.jpg");
-    background-size:cover;
+    background-size: cover;
+    min-height: 500px;
 }
+ 
 
 .bannerProjects {
     background-image: url("../Assets/bannerprojekty.jpg");
-    height: 500px;
+    min-height: 500px;
     background-size: cover;
 }
 
 .bannerContact {
     background-image: url("../Assets/kontakt2.jpeg");
-    height: 500px;
+    min-height: 500px;
     background-size: cover;
 }
  
