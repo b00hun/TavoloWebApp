@@ -101,7 +101,7 @@
 .banner {
     width: 100%;
     text-align: center;
-    color: white;
+    color: #a1a1a1;
     justify-content: center;
     margin-bottom: 5px;
 }
@@ -125,31 +125,38 @@
 }
 
 .btn-banner {
-    font-size: 20px;
+    font-family: "allura", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 30px;
+    color: black;
     display: inline-block;
     border: 1px solid white;
     padding: 10px 20px;
     border-radius: 10px;
     cursor: pointer;
-    font-weight: 300;
     margin-top: 30px;
-    
+    background-color: #cccccc;
+    transition: background-color 0.6s ease-out;
 }
 
- .btn-banner:hover {
-     background-color: white;
-     color: #33cccc;
- }
+
+    .btn-banner:hover {
+        background-color: #fcfcfc;
+        color: black;
+    }
 
 .bannersection {
     padding: 7%;
     transition: background-color 0.6s ease-out;
 }
-    .bannersection:hover {
-        background-color: rgb(0,0,0);
-        background-color: rgba(0,0,0, 0.6);
+
+
+.bannersection:hover {
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.6);
         
-    }
+}
 
 
 .bannerAbout {
