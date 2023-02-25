@@ -163,19 +163,24 @@
     background-image: url("../Assets/projektybackground.jpg");
     background-size: cover;
     min-height: 500px;
+    filter:contrast(135%);
 }
- 
+
 
 .bannerProjects {
     background-image: url("../Assets/bannerprojekty.jpg");
     min-height: 500px;
     background-size: cover;
+    filter: contrast(150%);
+
 }
 
 .bannerContact {
     background-image: url("../Assets/kontakt2.jpeg");
     min-height: 500px;
     background-size: cover;
+    filter: contrast(120%);
+
 }
  
 
