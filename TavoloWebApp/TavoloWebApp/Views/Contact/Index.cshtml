@@ -1,0 +1,58 @@
+﻿@{
+    ViewData["Title"] = "Stolarstwo Łukasz Chełpa";
+}
+<div styles="margin-left:0px; background-color:#a1a1a1">
+    <figure class="headblock">
+        <figcaption style="position:relative; z-index:1; text-align:center;background-color:transparent;">
+            <img src="~/Assets/logostamp2.png" style="filter:invert(1); height:300px; width:auto;  margin-top:15%; margin-right:100px; display:inline-block"  />
+        </figcaption>
+    </figure>
+
+    @*O stolarni*@
+
+    <section class="banner" style="margin-top:5px">
+        <div class="mainDiv bannerAbout">
+            <div>
+            <section class="bannersection" >
+                <h1 class="bannerHeader" style="margin-top:10px">Stolarnia Tavolo - Lukasz Chelpa</h1>
+                <p class="about mainFont">Tavolo specjalizuje się w wykonywaniu mebli z żywicy i drewna. Jako pasjonat, kłade nacisk na jakość swoich wyrobów oraz zadowolenie klienta.</p>
+                <p class="about mainFont">Starrannie dobieram materiały oraz stosuje nowoczesne technologie aby stworzyć oryginalne i funkcjonalne meble dopasowane do indywidualnych potrzeb moich klientow.</p>
+                <p class="about mainFont">Dzięki temu moja stolarnia cieszy się dobrą reputacją wsród klientów, którzy doceniają wysoką jakość produktów oraz profesjonalną obsługę.</p>
+                <p class="about mainFont">Więcej informacji znajdziesz w zakładce  O Firmie.</p>
+                <a class="nav-link btn-banner" asp-area="" asp-controller="Home" asp-action="About">O Firmie</a>
+        
+            </section>
+            </div>
+        </div>
+    </section>
+       
+    
+    
+
+    @*Projekty*@
+    <section class="banner" style="margin-top:5px">
+        <div class="mainDiv bannerProjects">
+            <section class="bannersection" >
+                <h1 class="bannerHeader">Projekty</h1>
+                <p class="about mainFont">Zobacz moje realizacje oraz projekty</p>
+                <a  class="nav-link btn-banner" asp-area="" asp-controller="Project" asp-action="Index">Projekty</a>
+        </section>
+        </div>
+    </section>
+
+
+    @*Kontakt*@
+    <section class="banner" style="margin-top:5px">
+        <div class="mainDiv bannerContact">
+            <section class="bannersection">
+                <h1 class="bannerHeader">Kontakt</h1>
+                <p class="about mainFont">Jeżeli chciałbyś zamówić któryś z moich projektów, poprosic o wycene- możesz to zrobić bezpośrednio w danym projekcie</p>
+                <p class="about mainFont">Jeśli masz własny pomysł do realizacji - wyślij go do mnie przez formularz kontaktowy w zakładce kontakty</p>
+                <a class="nav-link btn-banner" asp-controller="Home" asp-action="Kontakt">Kontakt</a>
+            </section>
+        </div>
+    </section>
+
+    
+
+</div>
