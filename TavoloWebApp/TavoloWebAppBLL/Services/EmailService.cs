@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TavoloWebAppBLL.Models;
 using TavoloWebAppBLL.Services.IServices;
 
 namespace TavoloWebAppBLL.Services
@@ -19,17 +20,16 @@ namespace TavoloWebAppBLL.Services
             
         }
 
-        private string MyEmailAdress= "adres@gmail.com";
-        private string EmailSubject = "Wiadomość kontaktowa";
-        public Task SendEmailAsync(string email, string htmlMessage)
+        
+        public Task SendEmailAsync(Email email)
         {
             var message = new MimeMessage();
-            message.From.Add(MailboxAddress.Parse(MyEmailAdress));
-            message.To.Add(MailboxAddress.Parse(email));
-            message.Subject = EmailSubject;
+            message.From.Add(MailboxAddress.Parse(email.FromEmail));
+            message.To.Add(MailboxAddress.Parse(email.ToEmail));
+            message.Subject = email.Subject;
             message.Body = new TextPart(MimeKit.Text.TextFormat.Html)
             {
-                Text = htmlMessage
+                Text = email.Body
             };
 
             using (var emailClient = new SmtpClient())
