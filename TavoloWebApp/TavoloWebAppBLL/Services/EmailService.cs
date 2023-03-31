@@ -11,7 +11,7 @@ using TavoloWebAppBLL.Services.IServices;
 
 namespace TavoloWebAppBLL.Services
 {
-    public class EmailService : IEmailService
+    public class EmailService : /*IEmailService*/
     {
         private readonly IConfiguration _config;
         public EmailService(IConfiguration config)
@@ -21,28 +21,28 @@ namespace TavoloWebAppBLL.Services
         }
 
         
-        public Task SendEmailAsync(Email email)
-        {
-            var message = new MimeMessage();
-            message.From.Add(MailboxAddress.Parse(email.FromEmail));
-            message.To.Add(MailboxAddress.Parse(email.ToEmail));
-            message.Subject = email.Subject;
-            message.Body = new TextPart(MimeKit.Text.TextFormat.Html)
-            {
-                Text = email.Body
-            };
+        //public Task SendEmailAsync(Email email, Project? projekt)
+        //{
+        //    var message = new MimeMessage();
+        //    message.From.Add(MailboxAddress.Parse(email.FromEmail));
+        //    message.To.Add(MailboxAddress.Parse(email.ToEmail));
+        //    message.Subject = email.Subject;
+        //    message.Body = new TextPart(MimeKit.Text.TextFormat.Html)
+        //    {
+        //        Text = email.Body
+        //    };
 
-            using (var emailClient = new SmtpClient())
-            {
-                emailClient.Connect(_config.GetSection("EmailHost").Value, 587, MailKit.Security.SecureSocketOptions.StartTls);
-                emailClient.Authenticate(_config.GetSection("EmailUser").Value, _config.GetSection("EmailPassword").Value);
-                emailClient.Send(message);
-                emailClient.Disconnect(true);
+        //    using (var emailClient = new SmtpClient())
+        //    {
+        //        emailClient.Connect(_config.GetSection("EmailHost").Value, 587, MailKit.Security.SecureSocketOptions.StartTls);
+        //        emailClient.Authenticate(_config.GetSection("EmailUser").Value, _config.GetSection("EmailPassword").Value);
+        //        emailClient.Send(message);
+        //        emailClient.Disconnect(true);
 
-            }
-            return Task.CompletedTask;
+        //    }
+        //    return Task.CompletedTask;
 
 
-        }
+        //}
     }
 }

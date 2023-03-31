@@ -4,14 +4,17 @@ namespace TavoloWebAppASP.Controllers
 {
     public class ContactController : Controller
     {
-        public IActionResult Index()
+        //GET ContactController/Email
+        public ActionResult SendEmail()
         {
             return View();
         }
 
-        public IActionResult SendEmail()
-        {
-            return View();
+        // POST: ProjectController/Email
+        //[HttpPost]
+        //[ValidateAntiForgeryToken]
+        //public ActionResult Create(Project model, IFormFileCollection? files)
+        //{ 
+        //}
         }
-    }
 }
